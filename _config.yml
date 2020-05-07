@@ -1,3 +1,31 @@
+# site settings
 title: Lukáš Pirkl
-description: Game Developer
-theme: jekyll-theme-slate
+subtitle: Game Developer
+email: pirkl.lukas@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/lukaspirkl/
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/lukaspirkl/
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/lukas_pirkl/
+itchio_url: https://lowcase.itch.io/
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
