@@ -15,13 +15,12 @@
 	<ul class="actions vertical">
 		<li><a href="{{ "" | absolute_url }}" class="button special fit">Portfolio</a></li>
 	</ul>
-<!--
+
 	<ul class="links">
-        {% for page in site.html_pages %}
-		    {% if page.layout != "landing" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
+		{% assign sorted-projects = site.projects | reverse %}
+		{% for project in sorted-projects %}
+			<li><a href="{{ project.url | absolute_url }}">{{ project.title }}</a></li>
 		{% endfor %}
 	</ul>
--->
+
 </nav>

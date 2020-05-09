@@ -22,78 +22,22 @@ nav-menu: true
 -->
 <!-- Two -->
 <section id="two" class="spotlights">
+{% assign sorted-projects = site.projects | reverse %}
+{% for project in sorted-projects %}
 	<section>
-		<!--
-		<a href="https://lowcase.itch.io/crystalcavern/" class="image">
-			<img src="{% link assets/images/pic09.jpg %}" alt="" data-position="center center" />
+		<a href="{{ project.url }}" class="image">
+			<img src="{{ site.baseurl }}/{{ project.image }}" alt="" data-position="center center" />
 		</a>
-		-->
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Crystal Cavern</h3>
+					<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
 				</header>
-				<p>Puzzle game where you are rolling the ball, collecting crystals and avoiding all sorts of danger.</p>
-				<ul class="actions">
-					<li><a href="https://lowcase.itch.io/crystalcavern/" class="button">Learn more</a></li>
-				</ul>
+				<p>{{ project.description }}</p>
 			</div>
 		</div>
 	</section>
-	<section>
-		<!--
-		<a href="https://lowcase.itch.io/cumulus/" class="image">
-			<img src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
-		</a>
-		-->
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Cumulus</h3>
-				</header>
-				<p>A game about blowing to the clouds.</p>
-				<ul class="actions">
-					<li><a href="https://lowcase.itch.io/cumulus/" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<!--
-		<a href="https://lowcase.itch.io/tetrawall/" class="image">
-			<img src="{% link assets/images/pic09.jpg %}" alt="" data-position="top center" />
-		</a>
-		-->
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Tetrawall</h3>
-				</header>
-				<p>A combination of Tetris and Arkanoid with a little bit of tower defense. The game was done in one week for OLC CodeJam 2019. </p>
-				<ul class="actions">
-					<li><a href="https://lowcase.itch.io/tetrawall/" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<!--
-		<a href="https://drakir.itch.io/infestation/" class="image">
-			<img src="{% link assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
-		</a>
-		-->
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Infestation</h3>
-				</header>
-				<p>Lead your squad from one corner of the space station to the opposite one. On their way to their safety you have to unlock doors leading to the next room by matching the door's signal - its frequency, amplitude and offset. Alien organisms will attack you in each room - if you unlock the door before the fight finishes, your squad can escape earlier.</p>
-				<ul class="actions">
-					<li><a href="https://drakir.itch.io/infestation/" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+{% endfor %}
 </section>
 
 <!-- Three -->
