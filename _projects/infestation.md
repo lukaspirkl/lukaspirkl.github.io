@@ -1,8 +1,11 @@
 ---
 layout: project
 title: Infestation
-description: Lead your squad from one corner of the space station to the opposite one. On their way to their safety, you have to unlock doors leading to the next room by matching the door's signal - its frequency, amplitude, and offset. Alien organisms will attack you in each room - if you unlock the door before the fight finishes, your squad can escape earlier.
+description: Lead your squad through the space station. On their way to their safety, you have to unlock doors by matching the door's signal - its frequency, amplitude, and offset. Alien organisms will attack you in each room.
 image: assets/images/infestation-title.png
+tags:
+  - JavaScript
+accolades: Won [honorable mention price](https://gynvael.coldwind.pl/?lang=en&id=703) in the game jam.
 date: 2019-01-29
 ---
 
@@ -26,12 +29,12 @@ goal is to find the frequency of this note but this note is also used as a root 
 ## Accolades
 Won [honorable mention price](https://gynvael.coldwind.pl/?lang=en&id=703) in the game jam
 
-## Play online 
+## Play online
 
 {% include itchio.html id='492098' link='https://drakir.itch.io/infestation' text='Infestation by Drakir, Lowcase' %}
 
 ## Links
-- Source 
+- Source
 	- https://github.com/7rakir/Infestation
 - Gamejam rules
 	- https://gynvael.coldwind.pl/?id=697

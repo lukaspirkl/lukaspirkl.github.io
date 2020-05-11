@@ -4,6 +4,10 @@ title: Tetrawall
 description: A combination of Tetris and Arkanoid with a little bit of tower defense. The game was done in one week for OLC CodeJam 2019.
 image: assets/images/tetrawall-title.gif
 date: 2019-09-07
+accolades: Won [1st place](https://itch.io/jam/olc-codejam-2019/results) in the game jam.
+tags:
+  - TIC-80
+  - Lua
 ---
 
 (Solo project)
@@ -15,12 +19,12 @@ As a previous game jam was a success, I decided to try it once again. This time 
 ## Accolades
 Won [1st place](https://itch.io/jam/olc-codejam-2019/results) in the game jam
 
-## Play online 
+## Play online
 
 {% include itchio.html id='479937' link='https://lowcase.itch.io/tetrawall' text='Infestation by Drakir, Lowcase' %}
 
 ## Links
-- Source 
+- Source
 	- https://github.com/lukaspirkl/Tetrawall
 - Gamejam
 	- https://itch.io/jam/olc-codejam-2019

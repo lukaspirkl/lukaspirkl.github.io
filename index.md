@@ -6,22 +6,9 @@ image: assets/images/code.jpg
 nav-menu: true
 ---
 
-<!-- Main -->
 <div id="main">
 
-<!-- One -->
-<!--
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h2>Sed amet aliquam</h2>
-		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
-	</div>
-</section>
--->
-<!-- Two -->
-<section id="two" class="spotlights">
+<section class="spotlights">
 {% assign sorted-projects = site.projects | reverse %}
 {% for project in sorted-projects %}
 	<section>
@@ -30,18 +17,32 @@ nav-menu: true
 		</a>
 		<div class="content">
 			<div class="inner">
-				<header class="major">
-					<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-				</header>
-				<p>{{ project.description }}</p>
+				<div class="row">
+					<div class="6u 12u$(small)">
+						<header class="major">
+							<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+						</header>
+					</div>
+					<div class="6u 12u$(small)" style="text-align-last: right;">
+						<p>
+							{% for tag in project.tags %}
+								<span class="msc-badge msc-badge__blue">{{tag}}</span>
+							{% endfor %}
+						</p>
+					</div>
+				</div>
+				{{ project.description | markdownify }}
+				<b>{{ project.accolades | markdownify }}</b>
+				<ul class="actions small">
+					<li><a href="{{ project.url }}" class="button small">Learn more</a></li>
+				</ul>
 			</div>
 		</div>
 	</section>
 {% endfor %}
 </section>
 
-<!-- Three -->
-<section id="three">
+<section>
 	<div class="inner">
 		<header class="major">
 			<h2>Other projects</h2>
