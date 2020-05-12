@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Cumulus
-description: A game about blowing to the clouds. It was in two weeks for Shaknews game jam.
+description: A game about blowing to the clouds. It was done in two weeks for Shacknews game jam.
 image: assets/images/cumulus-title.gif
 date: 2019-10-20
 tags:
@@ -16,7 +16,7 @@ tags:
 
 **(Team of two)**
 
-I teamed up with my friend [Drakir](https://drakir.itch.io) once again. We randomly picked two weeks long [Shaknews Jam](https://itch.io/jam/shacknews-jam-do-it-iv-shacknews) with the theme "Be relatively evil". We decided to think outside of the box and ignore all standard game genres. The result is a unique game, where the player is controlling the wind to push clouds above the cities to save them from drought.
+I teamed up with my friend [Drakir](https://drakir.itch.io) once again. We randomly picked two weeks long [Shacknews Jam](https://itch.io/jam/shacknews-jam-do-it-iv-shacknews) with the theme "Be relatively evil". We decided to think outside of the box and ignore all standard game genres. The result is a unique game, where the player is controlling the wind to push clouds above the cities to save them from drought.
 
 ![Screenshot](/assets/images/cumulus-title.gif)
 
