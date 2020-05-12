@@ -9,8 +9,7 @@ nav-menu: true
 <div id="main">
 
 <section class="spotlights">
-{% assign sorted-projects = site.projects | reverse %}
-{% for project in sorted-projects %}
+{% for project in site.projects reversed %}
 	<section>
 		<a href="{{ project.url }}" class="image">
 			<img src="{{ site.baseurl }}/{{ project.image }}" alt="" data-position="center center" />
