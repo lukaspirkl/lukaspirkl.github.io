@@ -16,3 +16,19 @@ tags:
 **(Solo project based on online course)**
 
 I took [the Unreal Engine online course](https://www.udemy.com/course/unrealblueprint/) and as a part of one of its sections, I started this. During the course, it was described how to create the torso of the game and the rest was left as a challenge for the student.
+
+
+### Features added to have complete game experience
+- main menu with options and pause menu with rotating camera
+- unlockable levels
+- persisted progress
+- sound and music
+- localization (english and czech)
+
+![Screenshot](/assets/images/crystalcavern-menu.png)
+
+![Screenshot](/assets/images/crystalcavern-game1.png)
+
+![Screenshot](/assets/images/crystalcavern-game2.png)
+
+![Screenshot](/assets/images/crystalcavern-game3.png)
